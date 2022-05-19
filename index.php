@@ -6,6 +6,7 @@
     $email = $_POST['email'];
     $sub = $_POST['sub'];
     $area = $_POST['textarea'];
+    $send = $_POST['send']; 
    
     
     if(isset($send)){
@@ -464,31 +465,31 @@
             emailRegex = /^[A-Za-z0-9+_.-]+@(.+)$/
             if(!emailRegex.test(email.value)){
                 email.className = "form-control is-invalid border border-3 border-danger";
-                error22.innerText = "Input the value of email";
-                error22.style.color = "red";
+                error11.innerText = "Input the value of email";
+                error11.style.color = "red";
             }
             else{
-               errror22.className = "form-control is-valid";
-               error22.innerText = ""; 
+               error11.className = "form-control is-valid";
+               error11.innerText = ""; 
             }
-            subRegex =  /^([a-z]{3,})$/
+            subRegex =  /^([a-z])$/
             if(!subRegex.test(sub.value)){
             sub.className = "form-control is-invalid border border-3 border-danger";
-            error33.innerText = "Input a least 3 input";
+            error33.innerText = "Input the required input";
             error33.style.color = "red";
             }
             else{
                 error33.className = "is-valid";
                 error33.innerText = "";
             }
-            areaRegex = /^([\w]{2,})$/
+            areaRegex = /^([\w])$/
             if(!areaRegex.test(area.value)){
                 area.className = "form-control is-invalid border border-3 border-danger";
-                error44.innerText = "Input a least 2 input";
+                error44.innerText = "Input the required input";
                 error44.style.color = "red";
             }
             else{
-               error44.className = " is-valid";
+               error44.className = "is-valid";
                error44.innerText = ""; 
             }
         }

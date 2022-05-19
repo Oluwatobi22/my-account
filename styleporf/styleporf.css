@@ -1,0 +1,22 @@
+.ope {
+    background: red;
+}
+.anu {
+    background: yellow;
+}
+.together {
+    background-color: #f8fbfe;
+}
+
+#space a {
+    margin-left: 78px;
+    color: white;
+}
+
+body{
+    background: unset! important;
+    font-family: sans-serif;
+}
+.nav-link {
+    color: white;
+}
